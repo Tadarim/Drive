@@ -1,0 +1,173 @@
+#wrapper {
+    margin: 80px auto;
+    background-color: #F5F3F4;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .3);
+    width: 480px;
+    height: 550px;
+    padding: 20px;
+}
+
+#wrapper h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+#wrapper p {
+    font-size: 14px;
+    margin: 10px 20px;
+    color: #9B9B9B;
+}
+
+#wrapper p a {
+    color: #09AAFF;
+}
+
+#wrapper ul {
+    color: #333;
+    font-size: 14px;
+    margin: 70px 0 0 20px;
+    /* background-color: blue; */
+}
+
+#wrapper ul li {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 32px;
+}
+
+#wrapper ul li p {
+    margin: 0;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#wrapper ul li input {
+    border: 2px solid #E0E0E0;
+    outline: none;
+    padding: 11px 10px;
+    width: 331px;
+    max-height: 40px;
+    border-radius: 4px;
+}
+
+#wrapper ul li:last-child input {
+    width: 220px;
+}
+
+#wrapper ul li:last-child button {
+    width: 100px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    color: #333;
+    font-weight: 200;
+    background-color: #fff;
+    cursor:pointer;
+}
+
+#btn {
+    margin-left: 60px;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    background-color: #09AAFF;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 10px;
+    width: 340px;
+    cursor:pointer;
+}
+
+#nametip {
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    background-color: #000;
+    /* width: 350px;  */
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+
+    display: none;
+}
+
+#nametip::after {
+    content: '';
+    display: block;
+    width: 0;
+
+    position: absolute;
+    bottom: -8px;
+    left: -200px;
+    right: 0;
+
+    border: 8px solid transparent;
+    border-bottom: none;
+    border-top-color: #000;
+
+    margin: auto;
+    display: none;
+}
+
+#wrapper input:focus {
+    border: 2px solid #09AAFF;
+}
+
+#nameWrap input:focus~#nametip,
+#nametip::after {
+    display: block;
+}
+
+#passWrap #passtip {
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    background-color: #000;
+    /* width: 350px;  */
+    line-height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+
+    display: none;
+}
+
+#passtip::after {
+    content: '';
+    display: block;
+    width: 0;
+
+    position: absolute;
+    bottom: -8px;
+    left: -240px;
+    right: 0;
+
+    border: 8px solid transparent;
+    border-bottom: none;
+    border-top-color: #000;
+
+    margin: auto;
+    display: none;
+}
+
+#passWrap input:focus~#passtip,
+#passtip::after {
+    display: block;
+}
+
+.warn {
+    color: red;
+    font-size: 13px;
+    position: absolute;
+    top: 33px;
+    left: 70px;
+}
